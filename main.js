@@ -166,7 +166,11 @@ function checkAnswer(rAnswer, count) {
   if (rAnswer === theChoosenAnswer) {
     rightAnswers++;
   }else{
-    Swal.fire(`الاجابة الصحيحة  هي ${rAnswer}`);
+    Swal.fire(
+      'الاجابة خاطئة',
+      `الاجابة الصحيحة هي ${rAnswer}`,
+      'error'
+    )
   }
 }
 
