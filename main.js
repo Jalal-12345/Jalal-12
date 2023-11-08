@@ -195,19 +195,19 @@ function showResults (count) {
   
 
     
-     if(rightAnswers >= 8){
+     if(rightAnswers >= 18){
       quiz_app.classList.add("perfect");
        resultsContainer.innerHTML += `
       <span > ممتاز جدا جدا </span>  : ${rightAnswers} من ${count}
       `
      
-     }else if (rightAnswers >= 5){
+     }else if (rightAnswers >= 15){
       quiz_app.classList.add("good");
 
      resultsContainer.innerHTML += `
       <span > جيد جدا </span>  : ${rightAnswers} من ${count}
     `
-     }else {
+     }else{
       quiz_app.classList.add("bad");
 
       resultsContainer.innerHTML += `
